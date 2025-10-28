@@ -1,11 +1,14 @@
+import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Index() {
+export default function NotFound() {
   return (
+    
     <View
       style={styles.StyleCont}
     >
-      <Text style={styles.text}> SmileView for a Dental Hospital</Text>
+      <Text style={styles.text}>Not FOFFFF</Text>
+      <Link href={"/"} style={styles.button}>Back to Home Screen</Link>
     </View>
   );
 }

@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Index() {
+export default function AboutHome() {
   return (
     <View
       style={styles.StyleCont}
     >
-      <Text style={styles.text}> SmileView for a Dental Hospital</Text>
+      <Text style={styles.did}>About Me</Text>
     </View>
   );
 }
@@ -16,15 +16,10 @@ const styles = StyleSheet.create({
         alignItems: "center",
         backgroundColor : 'grey',
   },
-  text : {
+  did : {
     fontSize: 20,
     fontWeight: "bold",
     color : 'white',
-  },
-  button : {
-    marginTop : 20,
-    fontSize : 18,
-    color : 'blue',
   }
  
-});
+})
