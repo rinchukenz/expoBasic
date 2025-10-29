@@ -1,11 +1,14 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Image } from "expo-image";
+import { StyleSheet, View } from "react-native";
+import ImageViewer from "@/component/ImageViewer";
 
+const PlaceHolderImage = require("../../assets/images/animeback.jpg");
 export default function Index() {
   return (
-    <View
-      style={styles.StyleCont}
-    >
-      <Text style={styles.text}> SmileView for a Dental Hospital</Text>
+    <View style={styles.StyleCont}>
+      <View style={styles.imageConst} >
+        <ImageViewer imgSource={PlaceHolderImage} />
+      </View>
     </View>
   );
 }
@@ -16,15 +19,12 @@ const styles = StyleSheet.create({
         alignItems: "center",
         backgroundColor : 'grey',
   },
-  text : {
-    fontSize: 20,
-    fontWeight: "bold",
-    color : 'white',
+  image : {
+    width : 320,
+    height : 440,
+    borderRadius : 18,
   },
-  button : {
-    marginTop : 20,
-    fontSize : 18,
-    color : 'blue',
-  }
- 
-});
+  imageConst : {
+    flex : 1,
+  
+}});
